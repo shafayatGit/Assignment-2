@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand_regular {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  *{
+    margin: 0;
+    padding:0;
+  }
+
+.text_primary{
+    color: rgb(254, 163, 1);
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Nav Section */
+
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    
+}
+
+.nav_name{
+    color: rgb(17, 17, 17);
+font-size: 2rem;
+font-weight: 700;
+}
+
+
+nav ul{
+    gap: 32px;
+font-size: 1.2rem;
+font-weight: 700;
+}
+.nav_title{
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+nav button{
+    width: 197px;
+height: 50px;
+border-radius: 12px;
+background: rgb(254, 163, 1);
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.2rem;
+font-weight: 600;
+border: none;
+}
+
+.nav_icon{
+    display: none;
+}
+hr{
+    display: none;
+}
+
+
+@media screen and (max-width:576px) {
+    nav>ul li, nav button, .nav_name{
+        display: none;
+    }
+    .nav_icon{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        margin-top: 10px;
+        display: block;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+}
