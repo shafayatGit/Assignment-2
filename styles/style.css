@@ -31,6 +31,7 @@
 body{
     max-width: 1158px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -133,6 +134,13 @@ margin-bottom: 60px;
 
 /* Card Section */
 
+.card_section{
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 0.5px dashed lightgray ;
+}
+
 .card_container{
     align-items: center;
     justify-content: center;
@@ -195,6 +203,141 @@ font-size: 0.9rem;
 font-weight: 700;
 }
 
+/* Arrows Section */
+
+.arrow_container {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.arrow_1{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--Orange, #FEA301);
+    color: #FFF;
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    /* 100% */
+}
+
+.arrow_2 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--Orange, #FEA301);
+    color: #FFF;
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+}
+
+/* Story card section */
+
+.story_card_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.story_card_1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.story_title{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 2.8rem;
+font-weight: 700;
+text-align: center;
+margin-bottom: 80px;
+}
+
+.story_img{
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 60px;
+}
+
+.story_btn_1{
+    width: 174.51px;
+height: 47.93px;
+border-radius: 47.93px;
+background: rgb(60, 216, 232);
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 0.9rem;
+font-weight: 500;
+border: none;
+position: absolute;
+margin-left: 40px;
+margin-top: -95px;
+}
+
+.story_card_title{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 50px;
+padding: 0 34px;
+}
+
+.story_card_description{
+    color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 0.9rem;
+font-weight: 500;
+margin-bottom: 34px;
+padding: 0 40px;
+}
+
+.story_btn_2{
+    position: absolute;
+    width: 174.51px;
+    height: 38.35px;
+    border-radius: 47.93px;
+    border: none;
+background: rgb(149, 178, 38);
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 0.9rem;
+font-weight: 500;
+
+margin-left: -270px;
+margin-top: 160px;
+}
+
+.story_card_title_2{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 0.9rem;
+font-weight: 700;
+padding: 0 40px;
+}
+
+.story_card_3_rep{
+    display: none;
+}
+
 
 @media screen and (max-width:576px) {
     nav>ul li, nav button, .nav_name{
@@ -242,5 +385,19 @@ font-weight: 700;
 font-family: Quicksand;
 font-size: 1.8rem;
 font-weight: 700;
+    }
+    .arrow_container{
+        display: none;
+    }
+
+    .story_card_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story_card_1{
+        display: none;
+    }
+    .story_card_3_rep{
+        display: block;
     }
 }
