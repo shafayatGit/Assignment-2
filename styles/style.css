@@ -37,8 +37,7 @@ body{
 /* Nav Section */
 
 .nav_container{
-    max-width: 1440px;
-    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +128,7 @@ font-size: 1.2rem;
 font-weight: 700;
 border-radius: 12px;
 background: rgb(17, 17, 17);
-
+margin-bottom: 60px;
 }
 
 /* Card Section */
@@ -235,5 +234,13 @@ font-weight: 700;
     }
     .card_container{
         flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .card_title{
+        color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 1.8rem;
+font-weight: 700;
     }
 }
