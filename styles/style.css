@@ -33,6 +33,7 @@
 body{
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 
@@ -93,7 +94,7 @@ border: none;
 }
 
 .nav_img{
-     max-width: 468.61px;
+     width: 100%;
 }
 hr{
     display: none;
@@ -254,13 +255,26 @@ font-weight: 700;
 }
 
 /* Story card section */
+.story_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .story_card_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    background:linear-gradient(180.00deg, rgba(255, 255, 255, 0),rgba(254, 163, 1, 0.3) 100%);
 
 
+}
+
+.card{
+    border-radius: 16px;
+background: rgb(255, 255, 255);
+margin-bottom: 20px;
 }
 
 .story_card_container img{
@@ -299,7 +313,7 @@ font-weight: 500;
 border: none;
 position: absolute;
 margin-left: -35%;
-margin-top: 23%;
+margin-top: 21%;
 }
 
 .story_card_title{
@@ -308,7 +322,6 @@ font-family: Quicksand;
 font-size: 1.5rem;
 font-weight: 700;
 margin-bottom: 50px;
-padding: 0 34px;
 }
 
 .story_card_description{
@@ -317,7 +330,10 @@ font-family: Raleway;
 font-size: 0.9rem;
 font-weight: 500;
 margin-bottom: 34px;
-padding: 0 40px;
+}
+
+.story_card_title, .story_card_description{
+    padding: 30px 68px;
 }
 
 .story_btn_2{
@@ -332,8 +348,8 @@ font-family: Raleway;
 font-size: 0.9rem;
 font-weight: 500;
 
-margin-left: -20%;
-margin-top: 12%;
+margin-left: -17%;
+margin-top: 10%;
 }
 
 .story_card_title_2{
@@ -341,7 +357,8 @@ margin-top: 12%;
 font-family: Quicksand;
 font-size: 0.9rem;
 font-weight: 700;
-padding: 0 40px;
+padding: 40px 40px;
+
 }
 
 .story_card_3_rep{
@@ -360,13 +377,25 @@ padding: 0 40px;
     background-color: black;
     margin-bottom: 2rem;
     text-align: center;
-    
+    justify-content: center;
     margin-top: 20px;
   }
 
-  .stories_button_last{
-    display: flex;
-    justify-content: center;
+  .btn_last{
+    text-align: center;
+    width: 12.3125rem;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: black;
+    margin-bottom: 2rem;
+    font-family: Quicksand;
+    margin: 60px 0;
+
   }
 
 /* Footer Section */
@@ -468,8 +497,8 @@ footer {
     }
 
     .nav_img{
-        width: 100%;
-        margin: 0 auto;
+        max-width: 336px;
+        margin: 0 30px;
     }
     .nav_container{
         justify-content: space-around;
@@ -524,6 +553,8 @@ font-weight: 700;
     .story_card_container{
         margin: 0 20px;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        background:linear-gradient(180.00deg, rgba(255, 255, 255, 0),rgba(254, 163, 1, 0.3) 100%);
     }
 
     .story_card_1{
@@ -555,15 +586,17 @@ margin-top: -10%;
     }
 
     footer {
+        width: 100%;
         padding: 20px;
         margin: 0 auto;
+        justify-content: center;
       }
       .footer-content {
         flex-direction: column;
         padding: 0px;
         justify-content: space-between;
         gap: 2rem;
-        /* margin: 4rem 0rem; */
+        margin: 4rem 0rem;
       }
       .footer-links a{
         text-decoration: none;
